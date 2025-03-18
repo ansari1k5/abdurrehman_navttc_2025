@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        input {
+            padding: 10px;
+            border: 1px solid green;
+            border-radius: 15px;
+        }
+
+        .button {
+            color: rgb(255, 255, 255);
+            background-color: green;
+            border: 1px solid white;
+            width: 100px;
+        }
+
+        .button:hover {
+            border: 1px solid green;
+            background-color: white;
+            color: green;
+            transition: ease-in 0.2s;
+            border-radius: 0px;
+
+        }
+        form{
+            border: 1px solid ;
+            padding: 20px;
+            border-radius: 20px;
+            width: 300px;
+            margin: auto;
+            background-color: rgb(232, 240, 237);
+            
+        }
+        select{
+            padding: 5px 20px 5px 5px;
+            border: 1px solid green;
+            border-radius: 10px;
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1></h1>
+    <form action="" method="get">
+        <label for="">Username</label>
+        <input type="text" required placeholder="Enter your Username" name="uname">
+        <br><br>
+        <label for="">Password</label>
+        <input type="password" required placeholder="Enter your secret key" name="password">
+        <br><br>
+        <p>What is your Gender?</p>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="male">
+        <label for="female">Female</label>
+        <br><br>
+        <p>What is your Favorate contury?</p>
+        <input type="checkbox" name="p" id="p" value="p">
+        <label for="p">Pakistan</label>
+        <input type="checkbox" name="c" id="c" value="c">
+        <label for="c">China</label>
+        <input type="checkbox" name="t" id="t" value="t">
+        <label for="t">Turkey</label>
+        <br><br>
+        <select name="course" id="course">
+            <option value="" disabled selected>Select your Trade</option>
+            <option value="web">Web-devolpoment</option>
+            <option value="app">App-devolpoment</option>
+            <option value="gd">Graphic Design</option>
+        </select>
+        <br><br>
+
+
+        <input class="button" type="submit" value="Login">
+    </form>
+</body>
+
+</html>
