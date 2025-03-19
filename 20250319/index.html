@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure&layout</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .header2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 20px;
+
+        }
+        .box{
+ 
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            
+        }
+        .yt{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+
+
+        }
+
+        audio{
+           margin: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header2">
+        <div class="logo">
+            <img src="media/logo.jpg" alt="logo" width="50">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Servics</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="yt">
+        <div class="box" >
+            <video src="media/video.mp4" loop controls ></video>
+            <h3>Play the Audio for listning</h3>
+        </div>
+<br>
+            <audio src="media/kalbifilmadina.mp3" loop controls></audio>
+
+ 
+        
+        
+
+
+    </main>
+</body>
+
+</html>
