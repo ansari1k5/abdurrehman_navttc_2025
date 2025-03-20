@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            margin: 0%;
+            padding: 0%;
+            width: 750px;
+        }
+
+        th {
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 86, 179);
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid black;
+            padding: 10px;
+
+
+
+
+        }
+
+        td,
+        td {
+            border: 1px solid black;
+            padding: 20px;
+            width: 200px;
+            text-transform: capitalize;
+            font-family: Arial, Helvetica, sans-serif;
+
+
+        }
+
+
+        .container {
+            width: 800px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            border-radius: 15px;
+            box-shadow: 2px 2px 15px 2px rgb(82, 82, 82);
+            padding: 30px;
+            background-color: rgb(244, 244, 244);
+
+        }
+
+        td {
+            font-size: 25px;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 15px;
+            margin: 0%;
+            padding: 5px;
+        }
+
+        label {
+            font-size: 18px;
+            color: rgb(51, 51, 51);
+        }
+
+        input {
+            width: 400px;
+            height: 40px;
+            color: rgb(51, 51, 51);
+            font-size: 16px;
+            padding-left: 10px;
+
+        }
+
+        .radio {
+            width: 20px;
+            height: 20px;
+        }
+
+        select {
+            width: 400px;
+            height: 40px;
+            font-size: 15px;
+            color: rgb(51, 51, 51);
+
+
+        }
+
+        .checkbox {
+            width: 20px;
+        }
+
+        textarea {
+            width: 400px;
+            color: rgb(51, 51, 51);
+            font-size: 20px;
+
+        }
+
+        .btn {
+            width: 200px;
+            background-color: rgb(0, 86, 179);
+            color: rgb(255, 255, 255);
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            height: 50px;
+            font-size: 20px;
+
+        }
+
+        .button {
+            align-items: center;
+
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Report form</h1>
+    <div class="container">
+        <form action="" method="get">
+            <table>
+                <thead>
+                    <th colspan="2">Information Table</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td>
+                            <input type="text" placeholder="Full Name" required>
+                            <p>Enter your full Name <span>*</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>
+                            <input type="email" placeholder="example@gamil.com" required>
+                            <p>Enter An Internet Your contact Adress <span>*</span></p>
+                        </td>
+                    <tr>
+                        <td>Password</td>
+                        <td>
+                            <input type="password" placeholder="Enter your Password" required>
+                            <p>Enter A code To Identify You <span>*</span></p>
+                        </td>
+                    <tr>
+                        <td>Adress</td>
+                        <td>
+                            <input type="text" placeholder="Adress" required>
+                            <p>Complete Adress <span>*</span></p>
+                        </td>
+                    <tr>
+                        <td>Country</td>
+                        <td>
+                            <select name="Country" id="Country">
+                                <option value="" disabled selected>Select your Country </option>
+                                <option value="">Pakistan</option>
+
+                                <option value="">Canada (North America)</option>
+                                <option value="">Brazil (South America)
+                                </option>
+                                <option value="">Germany (Europe)
+                                </option>
+                                <option value="">Japan (Asia)
+                                </option>
+                                <option value="">Australia (Oceania)
+                                </option>
+                                <option value="">South Africa (Africa) </option>
+                                <option value="">Saudi Arabia (Middle East) </option>
+                                <option value="">India (Asia)
+                                </option>
+                                <option value="">Argentina (South America) </option>
+                                <option value="">Sweden (Europe) </option>
+                            </select>
+
+                        </td>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input class="radio" type="radio" name="Gender" value="male" id="male">
+                            <label for="male">Male</label>
+                            <input class="radio" type="radio" name="Gender" id="Female" value="Female">
+                            <label for="Female">Female</label>
+
+                        </td>
+                    <tr>
+                        <td>Habbits</td>
+                        <td>
+                            <input class="checkbox" type="checkbox" id="r">
+                            <label for="r">Reading Daily
+                            </label><br>
+                            <input class="checkbox" type="checkbox" id="w">
+                            <label for="w">Waking Up Early
+                            </label><br>
+                            <input class="checkbox" type="checkbox" id="e">
+                            <label for="e">Exercise Regularly
+                            </label><br>
+                            <input class="checkbox" type="checkbox" id="s">
+                            <label for="s">Saving Money
+                            </label><br>
+                            <input class="checkbox" type="checkbox" id="t">
+                            <label for="t">Time Management
+                            </label>
+                        </td>
+                    <tr>
+                        <td>Your Web Site</td>
+                        <td>
+                            <input type="text" placeholder="https//...">
+                            <p>Provide your WebSite Url if Exists <span>(Not Necessary)</span></p>
+                        </td>
+                    <tr>
+                        <td>Other Information About you</td>
+                        <td>
+                            <textarea name="massage" id="massage" rows="8" cols="30"
+                                placeholder="Type Your text..."></textarea>
+
+                        </td>
+                    <tr>
+                        <td class="button"> <input class="btn" type="submit" value="Send In My Report"> </td>
+                        <td class="button">
+                            <input class="btn" type="submit" value="Erase Report Form">
+
+                        </td>
+
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
