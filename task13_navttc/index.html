@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown with Nested HTML and CSS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        margin: 0%;
+        padding: 0%;
+      }
+  
+      .menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: #026022;
+        display: inline-block;
+        width: 100%;
+      }
+  
+      .menu > li {
+        position: relative;
+        float: left;
+        list-style: none;
+      }
+  
+      .menu li a {
+        display: block;
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+      }
+  
+    
+  
+      .menu li ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #017545;
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        min-width: 150px;
+      }
+  
+      .menu li:hover > ul {
+        display: block;
+      }
+  
+      .menu li ul li a {
+        padding: 10px 15px;
+      }
+  
+      .menu li ul li a:hover {
+        background-color: #006955;
+      }
+  
+      .menu li ul li ul {
+        top: 0;
+        left: 100%;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li>
+        <a href="#">Services</a>
+        <ul>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">SEO</a></li>
+          <li>
+            <a href="#">More</a>
+            <ul>
+              <li><a href="#">Consulting</a></li>
+              <li><a href="#">Marketing</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  
+  </body>
+  </html>
+  

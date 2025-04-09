@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form with Image Buttons</title>
+  <style>
+    body{
+        text-align: center;
+        
+    }
+    .image-button {
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+
+    .image-button img {
+      width: 120px; 
+      height: auto;
+      transition: transform 0.2s;
+    }
+
+    .image-button img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <form method="get">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <button type="submit" class="image-button">
+      <img src="images/submit.jpg" alt="Submit">
+  </button>
+    <button type="reset" class="image-button">
+      <img src="images/reset.jpg" alt="Reset">
+    </button>
+  </form>
+
+</body>
+</html>
