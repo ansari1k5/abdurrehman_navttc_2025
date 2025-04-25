@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+  
+    <script>
+       
+      function student(gen ,nam){
+        if(gen == "male"){
+          return "Assalamu alaikum! Ada " + nam;
+        }else if(gen == "female"){
+          return "Assalamu alaikum! Adi " + nam;
+        }
+        else{
+          return " Error! : Write a proper name and gender. (Reload the site )  "
+        }
+      }
+      gender = prompt("Enter your Gender")
+      name = prompt("Enter your Name")
+      document.body.innerHTML = student(gender ,name)
+
+    </script>
+</body>
+</html>

@@ -1,3 +1,3 @@
 let book = "JavaScript Basics"
-
-console.log("The book I am reading is " + book)
+let page = "The book is "
+console.log(page + book)
